@@ -1,0 +1,23 @@
+services:
+  milosz-app:
+    image: ${DOCKERHUB_USERNAME:-citr0sco}/milosz-app:${TAG:-latest}
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Portfolio: ${PORTFOLIO_CONNECTION_STRING:-Data Source=assets/milosz-app.db}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://localhost:8080/api/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+      restart_policy:
+        condition: on-failure

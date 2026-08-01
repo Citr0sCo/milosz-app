@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.vscode/
+.angular/
+node_modules/
+dist/
+coverage/
+api/**/bin/
+api/**/obj/
+api/**/assets/*.db
+examples/*
+!examples/docker-compose.yml

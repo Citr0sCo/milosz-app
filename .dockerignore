@@ -1,0 +1,13 @@
+.git
+.github
+.angular
+node_modules
+dist
+out-tsc
+.vscode
+.idea
+*.user
+*.suo
+api/**/bin
+api/**/obj
+api/**/assets/*.db
