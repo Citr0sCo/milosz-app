@@ -10,3 +10,5 @@ api/**/obj/
 api/**/assets/*.db
 examples/*
 !examples/docker-compose.yml
+
+.openhands/
