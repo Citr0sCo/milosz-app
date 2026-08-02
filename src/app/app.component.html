@@ -1,200 +1,357 @@
 <div class="site-shell">
-    <div class="ambient ambient--one" aria-hidden="true"></div>
-    <div class="ambient ambient--two" aria-hidden="true"></div>
-    <div class="grid-lines" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="grid-lines" aria-hidden="true"></div>
 
-    <header class="site-header">
-        <a class="brand" href="#top" aria-label="Milosz Dura home">
-            <span class="brand-mark">MD</span>
-            <span class="brand-copy"><strong>milosz</strong><small>/ software engineer</small></span>
-        </a>
-        <nav class="main-nav" aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#work">Selected work</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a class="header-status" href="mailto:milosz.dura@gmail.com"><span class="status-dot"></span>Available for a
-            chat</a>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Milosz Dura home">
+      <span class="brand-mark">MD</span>
+      <span class="brand-copy"
+        ><strong>milosz</strong><small>/ software engineer</small></span
+      >
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Selected work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-status" href="mailto:milosz.dura@gmail.com"
+      ><span class="status-dot"></span>Available for a chat</a
+    >
+  </header>
 
-    <main id="top">
-        <section class="hero section-wrap" aria-labelledby="hero-title">
-            <div class="hero-copy reveal">
-                <p class="eyebrow"><span class="eyebrow-line"></span>Web Developer + Geek</p>
-                <h1 id="hero-title">Ideas into<br><em>useful things.</em></h1>
-                <p class="hero-intro">I’m Milosz, a software engineer who enjoys the space where robust backend systems
-                    meet thoughtful web experiences.</p>
-                <div class="hero-actions">
-                    <a class="button button--primary" href="#work">Explore the work <span>↘</span></a>
-                    <a class="text-link" href="mailto:milosz.dura@gmail.com">Let’s work together <span>↗</span></a>
-                </div>
-            </div>
-            <div class="hero-art reveal reveal--delay" aria-label="Decorative abstract engineering diagram">
-                <div class="orbit orbit--outer"></div>
-                <div class="orbit orbit--inner"></div>
-                <div class="orbit-node node--top"><span></span><small>API</small></div>
-                <div class="orbit-node node--right"><span></span><small>UI</small></div>
-                <div class="orbit-node node--bottom"><span></span><small>DATA</small></div>
-                <div class="core-orb"><span>MD</span></div>
-                <div class="art-label art-label--top">BUILD / SHIP / LEARN</div>
-                <div class="art-label art-label--bottom">52° 29′ N&nbsp;&nbsp; / &nbsp;&nbsp;1° 55′ W</div>
-            </div>
-            <div class="hero-meta reveal">
-                <span>01 - 04</span><span class="scroll-hint">Scroll to explore <span
-                    class="scroll-arrow">↓</span></span><span>UK / REMOTE</span>
-            </div>
-        </section>
-
-        <section id="about" class="section-wrap about-section" aria-labelledby="about-title">
-            <div class="section-heading reveal"><p class="eyebrow">A little context</p><span
-                    class="section-index">01</span></div>
-            <div class="about-grid">
-                <div class="about-portrait reveal">
-                    <div class="portrait-frame"><img src="assets/portfolio/headshot.jpg" alt="Portrait of Milosz Dura"
-                                                     loading="lazy"><span class="portrait-stamp">EST.<br>2015</span>
-                    </div>
-                    <p class="image-caption">A software engineer<br>with a web-shaped brain.</p>
-                </div>
-                <div class="about-copy reveal reveal--delay">
-                    <h2 id="about-title">Curious by default.<br><em>Serious about craft.</em></h2>
-                    <p>Hi. My name is Milosz and I am a Software Engineer and a Web Developer.</p>
-                    <p>In high school, I was introduced to the concept of the Web and fell in love with it. Ever since,
-                        I have been enthusiastic about creating and managing websites. My passion is backend web
-                        programming, but I also enjoy creating HTML + CSS + JavaScript frontends.</p>
-                    <p>Over the years I’ve worked on school and client projects, from focused frontend builds to
-                        extensive PHP backends using frameworks and CMS systems. In my free time I experiment, learn how
-                        websites work, and build things for practice.</p>
-                    <div class="about-signature"><span class="signature-mark">↳</span><span>Still learning.<br>Still making.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section-wrap education-section" aria-labelledby="education-title">
-            <div class="section-heading reveal"><p class="eyebrow">The long way round</p><span
-                    class="section-index">02</span></div>
-            <div class="section-title-row reveal"><h2 id="education-title">The foundations<br><em>matter.</em></h2>
-                <p>Every project starts somewhere. These are some of the places that shaped how I think, build, and keep
-                    asking better questions.</p></div>
-            <div class="education-grid">
-                @for (item of education; track item.title) {
-                    <article class="education-card reveal">
-                        <div class="education-image"><img [src]="'assets/portfolio/' + item.image" [alt]="item.title"
-                                                          loading="lazy"><span>{{ item.number }}</span></div>
-                        <div class="education-details"><p class="card-kicker">{{ item.year }}</p>
-                            <h3>{{ item.title }}</h3>
-                            <p>{{ item.detail }}</p></div>
-                    </article>
-                }
-            </div>
-        </section>
-
-        <section id="skills" class="section-wrap skills-section" aria-labelledby="skills-title">
-            <div class="section-heading reveal"><p class="eyebrow">The toolkit</p><span class="section-index">03</span>
-            </div>
-            <div class="section-title-row reveal"><h2 id="skills-title">A broad stack,<br><em>one point of view.</em>
-            </h2>
-                <p>Technology changes quickly. The useful part is knowing how to choose it, connect it, and make it
-                    serve the person on the other side of the screen.</p></div>
-            <div class="skill-grid">
-                <article class="skill-card reveal">
-                    <div class="skill-icon">&lt;/&gt;</div>
-                    <p class="card-kicker">01 / FRONTEND</p>
-                    <h3>Interfaces with intent.</h3>
-                    <p>I build clear, responsive websites using HTML, CSS, JavaScript, and modern frameworks. Bootstrap,
-                        Foundation, Sass, jQuery, Vue.js, AngularJS and NGX are all part of the journey.</p>
-                    <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span>
-                    </div>
-                </article>
-                <article class="skill-card reveal reveal--delay">
-                    <div class="skill-icon">&#123; &#125;</div>
-                    <p class="card-kicker">02 / BACKEND</p>
-                    <h3>Systems that hold up.</h3>
-                    <p>My main focus is backend development: PHP and C#, with MySQL, PostgreSQL, and Cassandra. I’m
-                        comfortable with Laravel, Symfony, MVC, and Web API.</p>
-                    <div class="chip-row"><span>C#</span><span>PHP</span><span>SQL</span><span>Web API</span></div>
-                </article>
-                <article class="skill-card reveal reveal--delay-2">
-                    <div class="skill-icon">⌘</div>
-                    <p class="card-kicker">03 / EXPERIENCE</p>
-                    <h3>Always in the details.</h3>
-                    <p>Years of professional software development have taught me to value source control, clear
-                        communication, and the unglamorous work that makes good software dependable.</p>
-                    <div class="chip-row"><span>Git</span><span>Subversion</span><span>WordPress</span><span>CMS</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="work" class="section-wrap work-section" aria-labelledby="work-title">
-            <div class="section-heading reveal"><p class="eyebrow">A selection of work</p><span
-                    class="section-index">04</span></div>
-            <div class="section-title-row section-title-row--work reveal">
-                <div><h2 id="work-title">Things I’ve<br><em>helped make.</em></h2></div>
-                <p>From business websites to spare-time experiments - a record of learning by building.</p></div>
-            <div class="filter-bar reveal" role="group" aria-label="Filter projects">
-                <button [class.filter-active]="activeFilter() === 'all'" (click)="setFilter('all')">All work
-                    <span>{{ projects.length }}</span></button>
-                <button [class.filter-active]="activeFilter() === 'web'" (click)="setFilter('web')">Web
-                    <span>{{ projects.filter(p => p.category === 'web').length }}</span></button>
-                <button [class.filter-active]="activeFilter() === 'commerce'" (click)="setFilter('commerce')">Commerce
-                    <span>{{ projects.filter(p => p.category === 'commerce').length }}</span></button>
-                <button [class.filter-active]="activeFilter() === 'lab'" (click)="setFilter('lab')">Lab
-                    <span>{{ projects.filter(p => p.category === 'lab').length }}</span></button>
-            </div>
-            <div class="project-grid">
-                @for (project of filteredProjects(); track project.title; let i = $index) {
-                    <a class="project-card reveal" [class.project-card--featured]="project.featured"
-                       [href]="project.url" target="_blank" rel="noopener noreferrer">
-                        <div class="project-image"><img [src]="'assets/portfolio/' + project.image"
-                                                        [alt]="project.title + ' project preview'" loading="lazy"><span
-                                class="project-arrow">↗</span></div>
-                        <div class="project-info">
-                            <div><p class="card-kicker">{{ (i + 1).toString().padStart(2, '0') }}
-                                / {{ project.category }}</p>
-                                <h3>{{ project.title }}</h3></div>
-                            <div class="tag-row">@for (tag of project.tags; track tag) {
-                                <span>{{ tag }}</span>
-                            }</div>
-                        </div>
-                        <p class="project-description">{{ project.description }}</p>
-                    </a>
-                }
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section" aria-labelledby="contact-title">
-            <div class="contact-art" aria-hidden="true">
-                <div class="contact-ring"></div>
-                <div class="contact-cross">+</div>
-                <span>LET’S MAKE<br>ANOTHER<br>GOOD THING</span></div>
-            <div class="section-wrap contact-inner reveal"><p class="eyebrow">The next chapter</p>
-                <h2 id="contact-title">Have a good<br><em>idea?</em></h2>
-                <p class="contact-intro">I’d love to hear what you’re working on, what you’re curious about, or what you
-                    think could be made a little better.</p><a class="button button--light"
-                                                               href="mailto:milosz.dura@gmail.com">Start a conversation
-                    <span>↗</span></a></div>
-        </section>
-    </main>
-
-    <footer class="site-footer section-wrap">
-        <div class="footer-top">
-            <a class="brand" href="#top">
-                <span class="brand-mark">MD</span>
-                <span class="brand-copy"><strong>milosz</strong><small>/ software engineer</small></span>
-            </a>
-            <div class="social-links">
-                @for (link of socialLinks; track link.label) {
-                    <a [href]="link.url" [attr.aria-label]="link.label"
-                       [attr.target]="link.icon === 'mail' ? null : '_blank'"
-                       rel="noopener noreferrer">{{ link.icon === 'mail' ? 'Mail' : link.label }}</a>
-                }
-            </div>
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>Web Developer + Geek
+        </p>
+        <h1 id="hero-title">Ideas into<br /><em>useful things.</em></h1>
+        <p class="hero-intro">
+          I’m Milosz, a software engineer who enjoys the space where robust
+          backend systems meet thoughtful web experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#work"
+            >Explore the work <span>↘</span></a
+          >
+          <a class="text-link" href="mailto:milosz.dura@gmail.com"
+            >Let’s work together <span>↗</span></a
+          >
         </div>
-        <div class="footer-bottom">
-            <span>© 2015 - {{ currentYear }} Milosz Dura</span>
-            <span>Designed + Developed with ☕️</span>
-            <span>miloszdura.com</span>
+      </div>
+      <div
+        class="hero-art reveal reveal--delay"
+        aria-label="Decorative abstract engineering diagram"
+      >
+        <div class="orbit orbit--outer"></div>
+        <div class="orbit orbit--inner"></div>
+        <div class="orbit-node node--top"><span></span><small>API</small></div>
+        <div class="orbit-node node--right"><span></span><small>UI</small></div>
+        <div class="orbit-node node--bottom">
+          <span></span><small>DATA</small>
         </div>
-    </footer>
+        <div class="core-orb"><span>MD</span></div>
+        <div class="art-label art-label--top">BUILD / SHIP / LEARN</div>
+        <div class="art-label art-label--bottom">
+          52° 29′ N&nbsp;&nbsp; / &nbsp;&nbsp;1° 55′ W
+        </div>
+      </div>
+      <div class="hero-meta reveal">
+        <span>01 - 04</span
+        ><span class="scroll-hint"
+          >Scroll to explore <span class="scroll-arrow">↓</span></span
+        ><span>UK / REMOTE</span>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="section-wrap about-section"
+      aria-labelledby="about-title"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">A little context</p>
+        <span class="section-index">01</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <div class="portrait-frame">
+            <img
+              src="assets/portfolio/headshot.jpg"
+              alt="Portrait of Milosz Dura"
+              loading="lazy"
+            /><span class="portrait-stamp">EST.<br />2015</span>
+          </div>
+          <p class="image-caption">
+            A software engineer<br />with a web-shaped brain.
+          </p>
+        </div>
+        <div class="about-copy reveal reveal--delay">
+          <h2 id="about-title">
+            Curious by default.<br /><em>Serious about craft.</em>
+          </h2>
+          <p>
+            Hi. My name is Milosz and I am a Software Engineer and a Web
+            Developer.
+          </p>
+          <p>
+            In high school, I was introduced to the concept of the Web and fell
+            in love with it. Ever since, I have been enthusiastic about creating
+            and managing websites. My passion is backend web programming, but I
+            also enjoy creating HTML + CSS + JavaScript frontends.
+          </p>
+          <p>
+            Over the years I’ve worked on school and client projects, from
+            focused frontend builds to extensive PHP backends using frameworks
+            and CMS systems. In my free time I experiment, learn how websites
+            work, and build things for practice.
+          </p>
+          <div class="about-signature">
+            <span class="signature-mark">↳</span
+            ><span>Still learning.<br />Still making.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="education"
+      class="section-wrap education-section"
+      aria-labelledby="education-title"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">The long way round</p>
+        <span class="section-index">02</span>
+      </div>
+      <div class="section-title-row reveal">
+        <h2 id="education-title">The foundations<br /><em>matter.</em></h2>
+        <p>
+          Every project starts somewhere. These are some of the places that
+          shaped how I think, build, and keep asking better questions.
+        </p>
+      </div>
+      <div class="education-grid">
+        @for (item of education; track item.title) {
+          <article class="education-card reveal">
+            <div class="education-image">
+              <img
+                [src]="'assets/portfolio/' + item.image"
+                [alt]="item.title"
+                loading="lazy"
+              /><span>{{ item.number }}</span>
+            </div>
+            <div class="education-details">
+              <p class="card-kicker">{{ item.year }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.detail }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="section-wrap skills-section"
+      aria-labelledby="skills-title"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">The toolkit</p>
+        <span class="section-index">03</span>
+      </div>
+      <div class="section-title-row reveal">
+        <h2 id="skills-title">
+          A broad stack,<br /><em>one point of view.</em>
+        </h2>
+        <p>
+          Technology changes quickly. The useful part is knowing how to choose
+          it, connect it, and make it serve the person on the other side of the
+          screen.
+        </p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <p class="card-kicker">01 / FRONTEND</p>
+          <h3>Interfaces with intent.</h3>
+          <p>
+            I build clear, responsive websites using HTML, CSS, JavaScript, and
+            modern frameworks. Bootstrap, Foundation, Sass, jQuery, Vue.js,
+            AngularJS and NGX are all part of the journey.
+          </p>
+          <div class="chip-row">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>Angular</span>
+          </div>
+        </article>
+        <article class="skill-card reveal reveal--delay">
+          <div class="skill-icon">&#123; &#125;</div>
+          <p class="card-kicker">02 / BACKEND</p>
+          <h3>Systems that hold up.</h3>
+          <p>
+            My main focus is backend development: PHP and C#, with MySQL,
+            PostgreSQL, and Cassandra. I’m comfortable with Laravel, Symfony,
+            MVC, and Web API.
+          </p>
+          <div class="chip-row">
+            <span>C#</span><span>PHP</span><span>SQL</span><span>Web API</span>
+          </div>
+        </article>
+        <article class="skill-card reveal reveal--delay-2">
+          <div class="skill-icon">⌘</div>
+          <p class="card-kicker">03 / EXPERIENCE</p>
+          <h3>Always in the details.</h3>
+          <p>
+            Years of professional software development have taught me to value
+            source control, clear communication, and the unglamorous work that
+            makes good software dependable.
+          </p>
+          <div class="chip-row">
+            <span>Git</span><span>Subversion</span><span>WordPress</span
+            ><span>CMS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="work"
+      class="section-wrap work-section"
+      aria-labelledby="work-title"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">A selection of work</p>
+        <span class="section-index">04</span>
+      </div>
+      <div class="section-title-row section-title-row--work reveal">
+        <div>
+          <h2 id="work-title">Things I’ve<br /><em>helped make.</em></h2>
+        </div>
+        <p>
+          From business websites to spare-time experiments - a record of
+          learning by building.
+        </p>
+      </div>
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button
+          [class.filter-active]="activeFilter() === 'all'"
+          (click)="setFilter('all')"
+        >
+          All work <span>{{ projects.length }}</span>
+        </button>
+        <button
+          [class.filter-active]="activeFilter() === 'web'"
+          (click)="setFilter('web')"
+        >
+          Web
+          <span>{{ projects.filter(p => p.category === 'web').length }}</span>
+        </button>
+        <button
+          [class.filter-active]="activeFilter() === 'commerce'"
+          (click)="setFilter('commerce')"
+        >
+          Commerce
+          <span
+            >{{ projects.filter(p => p.category === 'commerce').length }}</span
+          >
+        </button>
+        <button
+          [class.filter-active]="activeFilter() === 'lab'"
+          (click)="setFilter('lab')"
+        >
+          Lab
+          <span>{{ projects.filter(p => p.category === 'lab').length }}</span>
+        </button>
+      </div>
+      <div class="project-grid">
+        @for (
+          project of filteredProjects();
+          track project.title;
+          let i = $index
+        ) {
+          <a
+            class="project-card reveal"
+            [class.project-card--featured]="project.featured"
+            [href]="project.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-image">
+              <img
+                [src]="'assets/portfolio/' + project.image"
+                [alt]="project.title + ' project preview'"
+                loading="lazy"
+              /><span class="project-arrow">↗</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="card-kicker">
+                  {{ (i + 1).toString().padStart(2, "0") }} /
+                  {{ project.category }}
+                </p>
+                <h3>{{ project.title }}</h3>
+              </div>
+              <div class="tag-row">
+                @for (tag of project.tags; track tag) {
+                  <span>{{ tag }}</span>
+                }
+              </div>
+            </div>
+            <p class="project-description">{{ project.description }}</p>
+          </a>
+        }
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="contact-section"
+      aria-labelledby="contact-title"
+    >
+      <div class="contact-art" aria-hidden="true">
+        <div class="contact-ring"></div>
+        <div class="contact-cross">+</div>
+        <span>LET’S MAKE<br />ANOTHER<br />GOOD THING</span>
+      </div>
+      <div class="section-wrap contact-inner reveal">
+        <p class="eyebrow">The next chapter</p>
+        <h2 id="contact-title">Have a good<br /><em>idea?</em></h2>
+        <p class="contact-intro">
+          I’d love to hear what you’re working on, what you’re curious about, or
+          what you think could be made a little better.
+        </p>
+        <a class="button button--light" href="mailto:milosz.dura@gmail.com"
+          >Start a conversation <span>↗</span></a
+        >
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <div class="footer-top">
+      <a class="brand" href="#top">
+        <span class="brand-mark">MD</span>
+        <span class="brand-copy"
+          ><strong>milosz</strong><small>/ software engineer</small></span
+        >
+      </a>
+      <div class="social-links">
+        @for (link of socialLinks; track link.label) {
+          <a
+            [href]="link.url"
+            [attr.aria-label]="link.label"
+            [attr.target]="link.icon === 'mail' ? null : '_blank'"
+            rel="noopener noreferrer"
+            >{{ link.icon === "mail" ? "Mail" : link.label }}</a
+          >
+        }
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2015 - {{ currentYear }} Milosz Dura</span>
+      <span>Designed + Developed with ☕️</span>
+      <span>miloszdura.com</span>
+    </div>
+  </footer>
 </div>
