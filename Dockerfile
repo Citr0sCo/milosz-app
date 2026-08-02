@@ -1,29 +1,38 @@
-FROM node:22-bookworm-slim AS frontend-build
-WORKDIR /workspace
-COPY package*.json ./
-RUN npm ci --legacy-peer-deps
-COPY angular.json tsconfig*.json ./
-COPY src ./src
+FROM node:22 AS angular-build
+
+WORKDIR /web-gui
+COPY ./ .
+
+RUN npm install --legacy-peer-deps
+RUN npm install -g @angular/cli@19.2.5
 RUN npm run build
 
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS backend-build
-WORKDIR /src
-COPY api/MiloszApp.Api/MiloszApp.Api.csproj api/MiloszApp.Api/
-RUN dotnet restore api/MiloszApp.Api/MiloszApp.Api.csproj
-COPY api ./api
-RUN dotnet publish api/MiloszApp.Api/MiloszApp.Api.csproj -c Release -o /app/publish --no-restore
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
+WORKDIR /web-api/app
+EXPOSE 82
 
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
-WORKDIR /app
-ENV ASPNETCORE_HTTP_PORTS=8080
-EXPOSE 8080
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl \
-    && rm -rf /var/lib/apt/lists/* \
-    && mkdir -p /app/assets \
-    && chown -R $APP_UID:$APP_UID /app
-COPY --from=backend-build /app/publish .
-COPY --from=frontend-build /workspace/dist/milosz-app/browser ./wwwroot
-USER $APP_UID
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 CMD curl --fail --silent http://localhost:8080/api/health || exit 1
-ENTRYPOINT ["dotnet", "MiloszApp.Api.dll"]
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /web-api/src
+
+COPY ["/api/MiloszApp.Api/MiloszApp.Api.csproj", "api/"]
+
+RUN dotnet restore "api/MiloszApp.Api.csproj"
+
+WORKDIR "/web-api/src/api"
+COPY . .
+
+RUN rm -rf /web-api/src/api/**/obj /web-api/src/api/**/bin
+
+RUN dotnet build "MiloszApp.Api.csproj" -c Release -o /web-api/app/build
+
+FROM build AS publish
+RUN dotnet publish "MiloszApp.Api.csproj" -c Release -o /web-api/app/publish
+
+FROM base AS final
+WORKDIR /web-api/app
+
+COPY --from=publish /web-api/app/publish .
+
+COPY --from=angular-build /web-gui/dist/milosz-app/browser /web-api/app/wwwroot
+
+CMD ["dotnet", "MiloszApp.Api.dll"]
