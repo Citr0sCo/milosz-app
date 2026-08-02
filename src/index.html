@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Milosz Dura — Software Engineer & Web Developer</title>
+  <title>Milosz Dura - Web Developer + Geek</title>
   <meta name="description" content="Milosz Dura is a software engineer and web developer focused on thoughtful digital experiences and robust web applications.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0f0e">
@@ -10,6 +10,23 @@
   <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+    <script src="https://swetrix.org/swetrix.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            swetrix.init('uPcmvNmr4tPr', {
+                apiURL: 'https://analytics.miloszdura.com/backend/v1/log',
+            })
+            swetrix.trackViews()
+        })
+    </script>
+
+    <noscript>
+        <img
+                src="https://analytics.miloszdura.com/backend/log/noscript?pid=uPcmvNmr4tPr"
+                alt=""
+                referrerpolicy="no-referrer-when-downgrade"
+        />
+    </noscript>
+    <app-root></app-root>
 </body>
 </html>
