@@ -36,9 +36,9 @@ export const projects: Project[] = [
 ];
 
 export const education = [
-  { year: '2009 — 2012', title: 'Blessed Robert Sutton Catholic Sport College', detail: '8 GCSEs', image: 'robert.jpg', number: '01' },
-  { year: '2012 — 2014', title: 'Stapenhill Post 16 Centre', detail: 'Double ICT & Maths', image: 'stapen.jpg', number: '02' },
-  { year: '2014 — 2018', title: 'Staffordshire University', detail: 'Web Development', image: 'staffs.jpg', number: '03' }
+  { year: '2009 - 2012', title: 'Blessed Robert Sutton Catholic Sport College', detail: '8 GCSEs', image: 'robert.jpg', number: '01' },
+  { year: '2012 - 2014', title: 'Stapenhill Post 16 Centre', detail: 'Double ICT & Maths', image: 'stapen.jpg', number: '02' },
+  { year: '2014 - 2018', title: 'Staffordshire University', detail: 'Web Development', image: 'staffs.jpg', number: '03' }
 ];
 
 export const socialLinks: SocialLink[] = [
