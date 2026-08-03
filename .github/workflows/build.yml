@@ -1,6 +1,9 @@
 name: Build
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
   merge_group:
     types:
@@ -57,8 +60,25 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile --prefer-offline
 
-      # - name: Testing FE
-      #   run: npm run test-ci
+      - name: Run frontend tests with coverage
+        run: npm run test-ci
+
+      - name: Verify coverage report
+        run: test -f coverage/milosz-app/lcov.info
+
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-coverage
+          path: coverage/
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage/milosz-app/lcov.info
+          flags: frontend
+          fail_ci_if_error: false
+          token: ${{ secrets.CODECOV_TOKEN }}
 
 
   test-be:
