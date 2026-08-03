@@ -12,7 +12,9 @@
 <a href="https://hub.docker.com/r/citr0s/milosz-app"><img src="https://img.shields.io/docker/v/citr0s/milosz-app?sort=semver" alt="Docker version"></a>
 </p>
 
-[![Code coverage](https://codecov.io/gh/Citr0sCo/milosz-app/branch/main/graph/badge.svg)](https://codecov.io/gh/Citr0sCo/milosz-app)
+<p align="center">
+  <a href="https://codecov.io/gh/Citr0sCo/milosz-app"><img src="https://codecov.io/gh/Citr0sCo/milosz-app/branch/main/graph/badge.svg" alt="Code Coverage"></a>
+</p>
 
 The Codecov badge above is generated dynamically from the latest `main` branch coverage report. Run `npm run test-ci` locally to generate the same HTML and lcov reports in `coverage/`.
 
