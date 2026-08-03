@@ -17,8 +17,6 @@
   <a href="https://codecov.io/gh/Citr0sCo/milosz-app"><img src="https://codecov.io/gh/Citr0sCo/milosz-app/branch/main/graph/badge.svg" alt="Code Coverage"></a>
 </p>
 
-The Codecov badge above is generated dynamically from the latest `main` branch coverage report. Run `npm run test-ci` locally to generate the same HTML and lcov reports in `coverage/`.
-
 ---
 
 <h4 align="center">Milosz Dura's web profile.</h4>
