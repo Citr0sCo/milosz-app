@@ -13,7 +13,9 @@
 <a href="https://codecov.io/gh/Citr0sCo/milosz-app"><img src="https://codecov.io/gh/Citr0sCo/milosz-app/branch/main/graph/badge.svg" alt="Code coverage"></a>
 </p>
 
-The coverage badge is updated dynamically by the frontend test job after each build. Run `npm run test-ci` locally to generate the same HTML and lcov reports in `coverage/`.
+<p align="center">
+  <a href="https://codecov.io/gh/Citr0sCo/milosz-app"><img src="https://codecov.io/gh/Citr0sCo/milosz-app/branch/main/graph/badge.svg" alt="Code Coverage"></a>
+</p>
 
 ---
 
