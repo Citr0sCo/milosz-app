@@ -27,10 +27,10 @@
     "@angular/cli": "~22.1.4",
     "@angular/compiler-cli": "^22.1.2",
     "@types/jasmine": "~6.0.0",
-    "@vitest/coverage-v8": "^4.1.10",
+    "@vitest/coverage-v8": "^4.1.11",
     "jasmine-core": "~6.3.0",
     "jsdom": "^30.0.1",
     "typescript": "~6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   }
 }
