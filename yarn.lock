@@ -41,10 +41,10 @@
     ora "9.4.1"
     rxjs "7.8.2"
 
-"@angular/animations@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/animations/-/animations-22.1.4.tgz"
-  integrity sha512-DZqSHhmSRBVfLlrFxNLQj6PYVhu1w8vj1iUdD6fmlhfGGafuiw/VcUpBgYmy2YNcXmGmwbZsKr1oeJP7fT8zNQ==
+"@angular/animations@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-22.1.5.tgz#afb814ad5caeeafd1dc17553a2364df1fed942c0"
+  integrity sha512-lWxbbZ7v2J3Vq/FTb3isRsEb2sQtI9tcSDuZzhIZpOS9kdGf6Wg/GCf1u41pN6CJA4++iTQQ29gqVblARqQfpg==
   dependencies:
     tslib "^2.3.0"
 
@@ -102,17 +102,17 @@
     yargs "18.1.0"
     zod "4.4.3"
 
-"@angular/common@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/common/-/common-22.1.4.tgz"
-  integrity sha512-UtWCloA/d0I5twV9Lu/Fcc7T6uQb40f/k0Hj5HLohIsiLTyvXVxWINBfa7LWWLtcq/0UOIY/yCs9Zq9Sj4dWqA==
+"@angular/common@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-22.1.5.tgz#9d9fc30c1b95cbc2e1f6d0a23bbb6b85cb707648"
+  integrity sha512-KgB+MTDotlTn67YK4sCTNFLja+G+EMCqHo5bB1cvRKw7Gd9AtAi5kgDmYzMk7ftJ9qJ2O30zXR56Hpw37J2CTQ==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/compiler-cli@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-22.1.4.tgz"
-  integrity sha512-h9CcVG614TJLbk+dswlzSjYARYJh2MLOEwcnpt9zUGtOffhrrSS9BFJGjSwzdDSVM3J5mvf5ZuW+0hPAuRRoOA==
+"@angular/compiler-cli@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-22.1.5.tgz#8397905c68d87742274c886d182a1bf5d7836b41"
+  integrity sha512-XyeLlCqngUiZK8EMQo2DFfDxDoFdlsOe98eK7++N9Cs7qETTaMM3mu8iZbT2o6KhEwzjabW+mqipts1/ecEhyQ==
   dependencies:
     "@babel/core" "8.0.1"
     "@jridgewell/sourcemap-codec" "^1.4.14"
@@ -123,38 +123,38 @@
     tslib "^2.3.0"
     yargs "^18.0.0"
 
-"@angular/compiler@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/compiler/-/compiler-22.1.4.tgz"
-  integrity sha512-o+W0shjR5KmPPWchFmqN9bLINYAy14zIW//g9T5WqKDMOqjt4IbeY6AKOoE1db/dXffprLEH9nyPOmi19iKNxg==
+"@angular/compiler@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-22.1.5.tgz#32aceb8945671b5a2ba5b2e47670a560d7f07980"
+  integrity sha512-GvM0oNCuI09Up5Lk0ZQCX5yA2cGyHYB/rZsa/EGTnzwuxgLDlhOOa19QaVaoxDCo9vO43Ix9rG7SLppEv+qd1w==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/core/-/core-22.1.4.tgz"
-  integrity sha512-0dW+lw8nHo6RGBUOXtjs02vjHIPJ8rEbw4fd0NH3Dii4p+gIB4ZaTw+o7Se3Nf4m1oZ8+2qAYmWVHXlfhKcCDg==
+"@angular/core@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-22.1.5.tgz#52b1fdf9ed77b687bb6a7b75a7a13dda5d27b82c"
+  integrity sha512-uiL+xVL4264NEuc3E5ILd6meSv9I4Xt82VQHvYlAVYlcjHlWY49yVe0/apzncUOGxUKzvK8/GDbyFEH7WfJYFw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser-dynamic@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-22.1.4.tgz"
-  integrity sha512-gtaQ05csHot468owe3AOXJYd2/VPlIQFr3tyXV8O2vhkfTokAyynpaMLc2q7EWbrDDuMvzETR2sBKBhgqIul+A==
+"@angular/platform-browser-dynamic@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-22.1.5.tgz#815ca56d331433385a8669e615f1f2b6ef002877"
+  integrity sha512-xs1oU90Q5+c/hcIL3dOvIKP6zAY5bAL+/dpvbiV+Gg0aFk1SiWadGnrE99VIFhzR4GRFp701uORw/cpgp4ZNNw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-22.1.4.tgz"
-  integrity sha512-zhEWnRShG6GjnEvCVROD68XfnrV6+HJ9bPjwZx4LsAz7spX823Nhiml8Uqpvijsa1w7UdWLU7nK/magr9IEMOQ==
+"@angular/platform-browser@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-22.1.5.tgz#973d0336d18557e6c0fd0cc7aaeef591b2843e4d"
+  integrity sha512-xRX7TvHzFcur5bhZUqT7QPkezcSuWRzcltcsrqh3UsZnEJ2p+olilFyLq5yAneO13hffNifFkxngoSxVwKwnHw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@^22.1.4":
-  version "22.1.4"
-  resolved "https://registry.npmjs.org/@angular/router/-/router-22.1.4.tgz"
-  integrity sha512-vCwJLRnFBSRH5LxSF8OXKBhdmJ526hVGb/5sfeLTQW/oWCdcfXb2RvHfB077m5cdqKX9sBwFVlkJ8Z8kgx/pLQ==
+"@angular/router@^22.1.5":
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-22.1.5.tgz#e598a066a6a10500438bebaec544175fd6e4cad3"
+  integrity sha512-RYgL2iTGpMFcqZtXjcjxGVqGraDfOdk/epbLK8z/vy5cI+W2uVdiu5ait7xhv82KoaWT8lUU3sDc4jdI17qHcg==
   dependencies:
     tslib "^2.3.0"
 
