@@ -29,7 +29,7 @@
     "@types/jasmine": "~6.0.0",
     "@vitest/coverage-v8": "^4.1.11",
     "jasmine-core": "~6.3.0",
-    "jsdom": "^30.1.0",
+    "jsdom": "^30.1.1",
     "typescript": "~6.0.3",
     "vitest": "^4.1.11"
   }
