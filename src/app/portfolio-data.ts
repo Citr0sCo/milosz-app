@@ -30,7 +30,7 @@ export const projects: Project[] = [
   { title: 'Alphabet Soup', url: 'http://alphabet-soup.co.uk/', image: 'alphabet-soup.png', description: 'Business website written in PHP using Laravel and jQuery.', tags: ['PHP', 'Laravel'], category: 'web' },
   { title: 'Eurogel', url: 'http://eurogel.co.uk/', image: 'eurogel.png', description: 'Family-run business website written in PHP using jQuery.', tags: ['PHP', 'jQuery'], category: 'web' },
   { title: 'Docks Defender!', url: 'https://docksdefender.miloszdura.com/', image: 'docksDefender.png', description: 'A JavaScript game created during spare time.', tags: ['JavaScript', 'Game'], category: 'lab', featured: true },
-  { title: 'Radio Maxx', url: 'https://radiomaxxx.miloszdura.com/', image: 'radiomaxxx.jpg', description: 'An internet radio station project.', tags: ['Web', 'Media'], category: 'lab' },
+  { title: 'Radio Maxx', url: 'https://radiomaxx.miloszdura.com/', image: 'radiomaxxx.jpg', description: 'An internet radio station project.', tags: ['Web', 'Media'], category: 'lab' },
   { title: 'Gaming-Passion', url: 'https://techblog.miloszdura.com/', image: 'gamingPassion.jpg', description: 'A website based around news and reviews of video games.', tags: ['Web', 'Editorial'], category: 'lab' },
   { title: 'Chocbox', url: 'https://chocbox.miloszdura.com/', image: 'chocbox.jpg', description: 'An exciting chocolate creation kit website.', tags: ['Web', 'Commerce'], category: 'commerce' }
 ];
